@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/logo/favicon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/brand/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="css/slider.css" rel="stylesheet" />
+    <link href="css/side-nav.css" rel="stylesheet" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Java Tutorial</title>
+
+    <style type="text/css">
+        .flex {
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .divBg {
+            background-color:#C0C0C0;
+            border:none;
+            width:100%;
+        }
+        .divBg:hover {
+            background-color:gray;
+            color:white;
+        }
+        .divBg:after {
+            background-color:gray;
+            color:white;
+        }
+
+
+        div#mySidenav a:hover {
+            background-color: white;
+            color: #0779E4;
+            font-weight: bold;
+        }
+        div#mySidenav a.active {
+            background-color: #0779E4;
+            color: white;
+        }
+
+        .spnblack {
+            color:black; 
+            font-weight:bold;
+        }
+        .spn-clr1 {
+            background-color:lightgray; 
+            color:mediumvioletred;
+        }
+        .divpad {
+            background-color:lightgray; 
+            padding: 20px 20px 20px 20px;
+        }
+        .divpad1 {
+            background-color:black; 
+            font-family:Consolas; 
+            color:white;
+            padding: 5px 20px 5px 20px;
+        }
+        .divblack {
+            background-color:black; 
+            border-left:3px solid; 
+            border-left-color:#0779E4; 
+            font-family:Consolas; 
+            color:white; 
+            padding: 5px 20px 5px 20px;
+        }
+        .exercise {
+            background-color: darkslategray; 
+            padding: 20px 20px 20px 20px;
+        }
+        .exercise-in1 {
+            background-color: white; 
+            padding: 20px 20px 20px 20px;
+        }
+        .exercise-in2 {
+            background-color: lightgray; 
+            border-left:3px solid; 
+            border-left-color:#0779E4; 
+            padding: 20px 20px 20px 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+      <header class="site-navbar light site-navbar-target" role="banner" id="myHeader">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3">
+              <div class="site-logo">
+                <a href="index.html"><strong>WeTeachIT</strong></a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right">
+              
+              <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation" id="nav">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="about.html" class="nav-link">About</a></li>
+                  <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
+                  <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            
+          </div>
+        </div>
+
+      </header>
+
+    <div>
+        
+    <div id="mySidenav" class="sidenav">
+    <br /><br /><br /><br />
+    <h5>Java Tutorial</h5>
+  <a id="a1">Java HOME</a>
+  <a id="a2">Java Intro</a>
+  <a id="a3">Java Get Started</a>
+  <a id="a4">Java Syntax</a>
+  <a id="a5">Java Comments</a>
+  <a id="a6">Java Variables</a>
+  <a id="a7">Java Data Types</a>
+  <a id="a8">Java Type Casting</a>
+  <a id="a9">Java Operators</a>
+  <a id="a10">Java strings</a>
+  <a id="a11">Java Math</a>
+  <a id="a12">Java Booleans</a>
+  <a id="a13">Java If...Else</a>
+  <a id="a14">Java Switch</a>
+  <a id="a15">Java While Loop</a>
+  <a id="a16">Java For Loop</a>
+  <a id="a17">Java Break/Continuue</a>
+  <a id="a18">Java Arrays</a>
+    <br />
+    <h5>Java Methods</h5>
+  <a id="a19">Java Methods</a>
+  <a id="a20">Java Method Parameters</a>
+  <a id="a21">Java Method Overloading</a>
+  <a id="a22">Java Scope</a>
+  <a id="a23">Java Recursion</a>
+    <br />
+    <h5>Java Classes</h5>
+  <a id="a24">Java OOP</a>
+  <a id="a25">Java Classes/Objects</a>
+  <a id="a26">Java Class Attributes</a>
+  <a id="a27">Java Class Methods</a>
+  <a id="a28">Java Constructors</a>
+  <a id="a29">Java Modifiers</a>
+  <a id="a30">Java Encapsulation</a>
+  <a id="a31">Java Packages/API</a>
+  <a id="a32">Java Inheritance</a>
+  <a id="a33">Java Polymorphism</a>
+  <a id="a34">Java Inner Classes</a>
+  <a id="a35">Java Abstraction</a>
+  <a id="a36">Java Interference</a>
+  <a id="a37">Java Enuns</a>
+  <a id="a38">Java User Input</a>
+  <a id="a39">Java Data</a>
+  <a id="a40">Java ArrayList</a>
+  <a id="a41">Java LinkedList</a>
+  <a id="a42">Java HashMap</a>
+  <a id="a43">Java HashSet</a>
+  <a id="a44">Java Iterator</a>
+  <a id="a45">Java Wrapper Class</a>
+  <a id="a46">Java Exceptions</a>
+  <a id="a47">Java RegEx</a>
+  <a id="a48">Java Threads</a>
+  <a id="a49">Java Lambda</a>
+    <br />
+    <h5>Java File Handling</h5>
+  <a id="a50">Java Files</a>
+  <a id="a51">Java Create/Write Files</a>
+  <a id="a52">Java Read Files</a>
+  <a id="a53">Java Delete Files</a>
+    <br />
+    <h5>Java Refrence</h5>
+  <a id="a54">Java Keywords</a>
+  <a id="a55">Java String Methods</a>
+  <a id="a56">Java Math Methods</a>
+    <br />
+    <h5>Java How To</h5>
+  <a id="a57">Add/Sub Two Numbers</a>
+  <a id="a58">Factorial/Reverse</a>
+    <br />
+    <h5>Java Examples</h5>
+  <a id="a59">Java Exercises</a>
+  <a id="a60">Java Quiz</a>
+    <br /><br /><br />
+</div>
+    <div id="start" class="site-section-cover overlay" style="background-image: url('images/hero_bg.jpg');">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1><strong>Java</strong></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fst" class="main">
+        <br /><br />
+
+        <div class="col-lg-12">
+          <div class="slideshow-container">
+              <div class="text-center">
+              <img src="images/logo/java.png" style="height:215%; width:15%;" />
+                </div>
+              <div class="tutorial-item mb-4" id="div1">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div>
+                          <br />
+                      <div style="background-color:lightcyan; color:black; padding: 20px 20px 20px 20px;">
+                          <p>Java is a programming language.</p>
+                          <p>Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
+                          <input type="button" class="btn btn-primary px-4" id="nxt1" value="Start learning Java now &#187;" />
+                      </div>
+                      <hr />
+                      <div>
+                          <h2>Examples in Each Chapter</h2>
+                          <br />
+                          <p>Our "Show Java" tool makes it easy to learn Java, it shows both the code and the result.</p>
+                          <div data-pym-src="https://www.jdoodle.com/embed/v0/2cUk"></div>
+                          <p style="font-weight: bold; padding: 10px 20px 10px 20px;">Click on the "Execute" button to see how it works.</p>
+                      </div>
+                          <br />
+                      <div style="background-color: #FFFACD; color:black; padding: 20px 20px 20px 20px;">
+                          <p>We recommend reading this tutorial, in the sequence listed in the left menu.</p>
+                          <p>Java is an object oriented language and some concepts may be new. Take breaks when needed, and go over the examples as many times as needed.</p>
+                      </div>
+                      <hr />
+                      <div>
+                          <h2>Java Exercises</h2>
+                          <br />
+                          <div class="exercise">
+                              <br />
+                          <h2 style="color:white;">Test Yourself With Exercises</h2>
+                               <div class="exercise-in1">
+                                    <h2>Exercise:</h2>
+                                   <p>Insert the missing part of the code below to output "Hello World".</p>
+                                        <div class="exercise-in2">
+                                            <p><span style="color:#0779E4;">public class</span><span style="color:palevioletred"> MyClass</span>  {<br />
+                                                <span style="color:#0779E4;">&nbsp;&nbsp;&nbsp; public static void</span><span style="color:palevioletred"> main</span>(<span style="color:palevioletred">String</span>[ ] <span style="color:black">args</span>)  {<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="txt1" type="text" style="color:blue; border:none; width:80px;" /> . <input id="txt2" type="text" style="color:blue; border:none; width:50px;" /> . <input id="txt3" type="text" style="color:blue; border:none; width:90px;" /> ("<span style="color:forestgreen">Hello World</span>");<br />
+                                                &nbsp;&nbsp;&nbsp;}<br />
+                                                }
+                                            </p>
+                                            <br />
+                                            <div id="showDiv" style="border:2px solid; padding: 20px 20px 20px 20px;">
+                                                <h5>Correct Answer :</h5><br />
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="System" readonly="readonly" style="border:none; width:80px;" /> . <input type="text" placeholder="out" readonly="readonly" style="border:none; width:50px;" /> . <input type="text" placeholder="println" readonly="readonly" style="border:none; width:90px;" /> ("<span style="color:forestgreen">Hello World</span>");</p>
+                                            
+                                            </div>
+                                        </div>
+                                            <div id="DIV1">
+                                                <br />
+                                                <input type="button" id="show" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Show Answer" />
+                                            </div>
+                                            <div id="DIV2">
+                                                <br />
+                                                <input type="button" id="hide" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Hide Answer" />
+                                            </div>
+                               </div>
+                          </div>
+                      </div>
+                      <hr />
+                                                <br />
+                      <div>
+                          <h2>Learn by Examples</h2>
+                      <br />
+                          <p>Learn by examples! This tutorial supplements all explanations with clarifying examples.</p>
+                      </div>
+                      <hr />
+                                                <br />
+                      <div>
+                          <h2>Java Quiz</h2>
+                      <br />
+                          <p>Learn by taking a quiz! This quiz will give you a signal of how much you know, or do not know, about Java.</p>
+                           <input id="div60" type="button" class="btn btn-primary px-4"" value="Start Java Quiz" />
+                      </div>
+                      <hr />
+                                                <br />
+                      <div>
+                          <h2>Download Java</h2>
+                      <br />
+                          <p>Download Java from the official Java web site: <a href="https://www.oracle.com/java/">https://www.oracle.com</a></p>
+                       </div>
+                      <hr />
+
+                      <br />
+                  </div>
+                  <div class="text-right">
+                  <input type="button" class="btn btn-primary px-4" id="nxt1" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+
+              <div class="tutorial-item mb-4" id="div2">
+              <div class="heading mb-4">
+                <h2>Java Introduction</h2>
+              </div>
+                  <div>
+                      <br />
+                      <h2>What is Java?</h2>
+                      <br />
+                      <p>Java is a popular programming language, created in 1995.</p>
+                      <p>It is owned by Oracle, and more than <span style="font-weight:bold;">3 billion</span> devices run Java.</p>
+                      <p>It is used for:</p>
+                      <ul>
+                          <li>Mobile applications (specially Android apps)</li>
+                          <li>Desktop applications</li>
+                          <li>Web applications</li>
+                          <li>Web servers and application servers</li>
+                          <li>Games</li>
+                          <li>Database connection</li>
+                          <li>And much, much more!</li>
+                      </ul>
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Why Use Java?</h2>
+                      <br />
+                      <ul>
+                          <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                          <li>It is one of the most popular programming language in the world</li>
+                          <li>It is easy to learn and simple to use</li>
+                          <li>Web servers and application servers</li>
+                          <li>It is open-source and free</li>
+                          <li>It is secure, fast and powerful</li>
+                          <li>It has a huge community support (tens of millions of developers)</li>
+                          <li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+                          <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+                      </ul>
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Get Started</h2>
+                      <br />
+                      <p>This tutorial will teach you the basics of Java.</p>
+                      <p>It is not necessary to have any prior programming experience.</p>
+                      <br />
+                      <input id="nxt2" type="button" style="background-color:transparent; color:#0779E4; border-color:#0779E4; height:40px; border-radius:5px 5px;" value="Get Started &#187;"/>
+                  </div>
+                  <hr />
+
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre2" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt2" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+
+              <div class="tutorial-item mb-4" id="div3">
+              <div class="heading mb-4">
+                <h2>Java Getting Started</h2>
+              </div>
+                  <div>
+                      <br />
+                      <h2>Java Install</h2>
+                      <br />
+                      <p>Some PCs might have Java already installed.</p>
+                      <p>To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):</p>
+                      <div class="divpad">
+                          <div class="divpad1">
+                                <p>C:\Users\<span style="font-style:italic;">Your Name</span>>java -version</p>
+                          </div>
+                      </div>    
+                  <br />
+                          <p>If Java is installed, you will see something like this (depending on version):</p>
+                      <div class="divpad">
+                          <div class="divpad1">
+                                <p>java version "11.0.1" 2018-10-16 LTS<br />
+                                    Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)<br />
+                                    Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+                                </p>
+                          </div>
+                      </div> 
+                      <br />
+                      <p>If you do not have Java installed on your computer, you can download it for free from <a href="https://www.oracle.com/java/">oracle.com</a>.</p>
+                      <p><span style="font-weight:bold;">Note: </span>In this tutorial, we will write Java code in a text editor. 
+                          However, it is possible to write Java in an Integrated Development Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files.</p>
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Setup for Windows</h2>
+                      <br />
+                      <p>To install Java on Windows:</p>
+                      <ol type="1">
+                          <li>Go to "System Properties" (Can be found on Control Panel > System and Security > System > Advanced System Settings)</li>
+                          <li>Click on the "Environment variables" button under the "Advanced" tab</li>
+                          <li>Then, select the "Path" variable in System variables and click on the "Edit" button</li>
+                          <li>Click on the "New" button and add the path where Java is installed, followed by \bin.
+                              By default, Java is installed in C:\Program Files\Java\jdk-11.0.1 (If nothing else was specified when you installed it).
+                              In that case, You will have to add a new path with: <span style="font-weight:bold;">C:\Program Files\Java\jdk-11.0.1\bin</span> Then, click "OK", and save the settings</li>
+                          <li>At last, open Command Prompt (cmd.exe) and type <span style="font-weight:bold;">java -version</span> to see if Java is running on your machine</li>
+                      </ol>
+                  </div>
+                  <div>
+                      <br />    
+                      <div>
+                          <h3>How to install Java step-by-step with images &#187;</h3>
+                      </div>
+                      <br />
+                      <div>
+                          <input type="button" class="divBg" id="btn1" value="Step 1 &#187;" />
+                          <div id="pop1" style="background-color:#DCDCDC; padding: 20px 20px 20px 20px;">
+                              <h2>Step 1</h2>
+                              <br />
+                              <img src="images/system.png" style="width:800px;" />
+                          </div>
+                          <input type="button" class="divBg" id="btn2" value="Step 2 &#187;" />
+                          <div id="pop2" style="background-color:#DCDCDC; padding: 20px 20px 20px 20px;">
+                              <h2>Step 2</h2>
+                              <br />
+                              <img src="images/system1.png" />
+                          </div>
+                          <input type="button" class="divBg" id="btn3" value="Step 3 &#187;" />
+                          <div id="pop3" style="background-color:#DCDCDC; padding: 20px 20px 20px 20px;">
+                              <h2>Step 3</h2>
+                              <br />
+                              <img src="images/path1.png" />
+                          </div>
+                          <input type="button" class="divBg" id="btn4" value="Step 4 &#187;" />
+                          <div id="pop4" style="background-color:#DCDCDC; padding: 20px 20px 20px 20px;">
+                              <h2>Step 4</h2>
+                              <br />
+                              <img src="images/path2.png" />
+                          </div>
+                          <input type="button" class="divBg" id="btn5" value="Step 5 &#187;" />
+                          <div id="pop5" style="background-color:#DCDCDC; padding: 20px 20px 20px 20px;">
+                              <h2>Step 5</h2>
+                              <br />
+                                  <p>Write the following in the command line (cmd.exe):</p>
+                                  <div class="divpad">
+                                      <div class="divblack"">
+                                            <p>C:\Users\<span style="font-style:italic;">Your Name</span>>java -version</p>
+                                      </div>
+                                  </div>    
+                              <br />
+                                      <p>If Java was successfully installed, you will see something like this (depending on version):</p>
+                                  <div class="divpad">
+                                      <div class="divblack"">
+                                            <p>java version "11.0.1" 2018-10-16 LTS<br />
+                                                Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)<br />
+                                                Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+                                            </p>
+                                      </div>
+                                  </div> 
+                          </div>
+                      </div>
+                  </div>
+                  <hr />
+                  <br /><br /><br />
+                  <hr />
+                  <div>
+                      <h2>Java Quickstart</h2>
+                      <br />
+                      <p>In Java, every application begins with a class name, and that class must match the filename.,br/>
+                          Let's create our first Java file, called MyClass.java, which can be done in any text editor (like Notepad).<br />
+                          The file should contain a "Hello World" message, which is written with the following code:
+                      </p>
+                      <div style="background-color:lightgray; padding:25px 25px 25px 25px;">
+                          <h6>MyClass.java</h6>
+                          <br />
+                          <div data-pym-src="https://www.jdoodle.com/embed/v0/2cEL"></div>
+                      </div>
+                          <br />
+                      <p>Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on <span style="font-weight:bold;">how</span> to run the code above.</p>
+                      <p>Save the code in Notepad as "MyClass.java". Open Command Prompt (cmd.exe), navigate to the directory where you saved your file, and type "javac MyClass.java":</p>
+                                  <div class="divpad">
+                                      <div class="divblack"">
+                                            <p>C:\Users\<span style="font-style:italic;">Your Name</span>>javac MyClass.java</p>
+                                      </div>
+                                  </div>  
+                  <br />
+                      <p>This will compile your code. If there are no errors in the code, the command prompt will take you to the next line. Now, type "java MyClass" to run the file:</p
+                  <br />
+                                  <div class="divpad">
+                                      <div class="divblack"">
+                                            <p>C:\Users\<span style="font-style:italic;">Your Name</span>>java MyClass</p>
+                                      </div>
+                                  </div>  
+                  <br />
+                      <p>The output should read:</p>
+                                  <div class="divpad">
+                                      <div class="divpad1">
+                                            <p>Hello World</p>
+                                      </div>
+                                  </div>  
+                  <br />
+                      <p><span style="font-weight:bold;">Congratulations!</span> You have written and executed your first Java program.</p>
+                  </div>Congratulations
+
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre3" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt3" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+
+              <div class="tutorial-item mb-4" id="div4">
+              <div class="heading mb-4">
+                <h2>Java Syntax</h2>
+              </div>
+                  <div>
+                <h4>Java Syntax</h4>
+                      <br />
+                  <p>In the previous chapter, we created a Java file called MyClass.java, and we used the following code to print "Hello World" to the screen:</p>
+                      <div style="background-color:lightgray; padding:25px 25px 25px 25px;">
+                          <h6>MyClass.java</h6>
+                          <br />
+                          <div data-pym-src="https://www.jdoodle.com/embed/v0/2cEL"></div>
+                      </div>
+                          <br />
+                      <div>
+                          <h4>Example explained</h4>
+                          <br />
+                          <p>Every line of code that runs in Java must be inside a <span class="spn-clr1">class</span>. In our example, we named the class <span style="font-weight:bold;">MyClass</span>
+                              . A class should always start with an uppercase first letter.</p>
+                          <p><span style="font-weight:bold;">Note:</span> Java is case-sensitive: "MyClass" and "myclass" has different meaning.</p>
+                          <p>The name of the java file <span style="font-weight:bold;">must match</span> the class name. When saving the file, save it using the class name and add ".java" to the end of the filename.
+                              To run the example above on your computer, make sure that Java is properly installed: Go to the <a id="a3" style="text-decoration:underline; cursor:pointer;">Get Started Chapter</a> for how to install Java.
+                              The output should be:</p>
+                                  <div class="divpad">
+                                      <div class="divblack"">
+                                            <p>Hello World</p>
+                                      </div>
+                                  </div>  
+                      </div>
+                  </div>
+                  <hr /><br />
+                  <div>
+                      <h2>The main Method</h2>
+                      <br />
+                      <p>The <span class="spn-clr1">main( )</span> method is required and you will see it in every Java program:</p>
+                                  <div class="divpad">
+                                      <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                            <p><span style="color:#0779E4;">&nbsp;&nbsp;&nbsp; public static void</span><span style="color:palevioletred"> main</span><span style="color:gray">(</span><span style="color:palevioletred">String</span><span style="color:gray">[ ]</span> <span style="color:black">args</span><span style="color:gray">)</span></p>
+                                      </div>
+                                  </div> 
+                      <br />
+                      <p>Any code inside the <span class="spn-clr1">main( )</span> method will be executed. You don't have to understand the keywords before and after main. You will get to know them bit by bit while reading this tutorial.</p>
+                      <p>For now, just remember that every Java program has a <span class="spn-clr1">class</span> name which must match the filename, and that every program must contain the <span class="spn-clr1">main( )</span> method.</p>
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>System.out.println()</h2>
+                      <br />
+                      <p>Inside the <span class="spn-clr1">main( )</span> method, we can use the <span class="spn-clr1">println( )</span> method to print a line of text to the screen:</p>
+                                  <div class="divpad">
+                                      <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                            <p><span style="color:#0779E4;">&nbsp;&nbsp;&nbsp; public static void</span><span style="color:palevioletred"> main</span><span style="color:gray">(</span><span style="color:palevioletred">String</span><span style="color:gray">[ ]</span> <span style="color:black">args</span><span style="color:gray">)  {</span><br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:bold; color:mediumvioletred;">System</span> <span style="color:gray">.</span> <span style="font-weight:bold; color:black;">out</span> <span style="color:gray">.</span> 
+                                                <span style="font-weight:bold; color:mediumvioletred;">println</span> <span style="color:gray">("</span><span style="color:forestgreen; font-weight:bold;">Hello World</span><span style="color:gray">");</span><br />
+                                                &nbsp;&nbsp;&nbsp;<span style="color:gray">}</span>
+                                            </p>
+                                      </div>
+                                  </div> 
+                      <br />
+                      <div style="background-color: #FFFACD; color:black; padding: 20px 20px 20px 20px;">
+                          <p><span style="font-weight:bold;">Note:</span> The curly braces <span class="spn-clr1">{ }</span> marks the beginning and the end of a block of code.</p>
+                          <p><span style="font-weight:bold;">Note:</span> Each code statement must end with a semicolon.</p>
+                      </div>
+                  </div>
+                  <hr />
+                  <br />
+                          <div class="exercise">
+                              <br />
+                          <h2 style="color:white;">Test Yourself With Exercises</h2>
+                               <div class="exercise-in1">
+                                    <h2>Exercise:</h2>
+                                   <p>Insert the missing part of the code below to output "Hello World".</p>
+                                        <div class="exercise-in2">
+                                            <p><span style="color:#0779E4;">public class</span><span style="color:palevioletred"> MyClass</span>  {<br />
+                                                <span style="color:#0779E4;">&nbsp;&nbsp;&nbsp; public static void</span><span style="color:palevioletred"> main</span>(<span style="color:palevioletred">String</span>[ ] <span style="color:black">args</span>)  {<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="txt1" type="text" style="color:blue; border:none; width:80px;" /> . <input id="txt2" type="text" style="color:blue; border:none; width:50px;" /> . <input id="txt3" type="text" style="color:blue; border:none; width:90px;" /> ("<span style="color:forestgreen">Hello World</span>");<br />
+                                                &nbsp;&nbsp;&nbsp;}<br />
+                                                }
+                                            </p>
+                                            <br />
+                                            <div id="showDiv1" style="border:2px solid; padding: 20px 20px 20px 20px;">
+                                                <h5>Correct Answer :</h5><br />
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="System" readonly="readonly" style="border:none; width:80px;" /> . <input type="text" placeholder="out" readonly="readonly" style="border:none; width:50px;" /> . <input type="text" placeholder="println" readonly="readonly" style="border:none; width:90px;" /> ("<span style="color:forestgreen">Hello World</span>");</p>
+                                            
+                                            </div>
+                                        </div>
+                                            <div id="DIV3">
+                                                <br />
+                                                <input type="button" id="show1" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Show Answer" />
+                                            </div>
+                                            <div id="DIV4">
+                                                <br />
+                                                <input type="button" id="hide1" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Hide Answer" />
+                                            </div>
+                               </div>
+                          </div>
+                  <hr />
+
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre4" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt4" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div5">
+              <div class="heading mb-4">
+                <h2>Java Comments</h2>
+              </div>
+                  <div>
+                      <h4>Java Comments</h4>
+                      <br />
+                      <p>Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</p>
+                      <p>Single-line comments start with two forward slashes (<span class="spn-clr1"> / / </span>).</p>
+                      <p>Any text between <span class="spn-clr1"> / /</span>  and the end of the line is ignored by Java (will not be executed).</p>
+                      <p>This example uses a single-line comment before a line of code:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:darkslateblue;">// This is a comment</span><br />
+                                    <span style="font-weight:bold; color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="font-weight:bold; color:black;">out</span><span style="color:gray">.</span><span style="font-weight:bold; color:mediumvioletred;">println</span><span style="color:gray">("</span><span style="color:forestgreen; font-weight:bold;">Hello World</span><span style="color:gray">");</span>
+                                </p>
+                            </div>
+                        </div> 
+                      <br />
+                      <p>This example uses a single-line comment at the end of a line of code:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="font-weight:bold; color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="font-weight:bold; color:black;">out</span><span style="color:gray">.</span><span style="font-weight:bold; color:mediumvioletred;">println</span><span style="color:gray">("</span><span style="color:forestgreen; font-weight:bold;">Hello World</span><span style="color:gray">");</span>  <span style="color:darkslateblue;">// This is a comment</span>
+                                </p>
+                            </div>
+                        </div> 
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Java Multi-line Comments</h2>
+                      <br />
+                      <p>Multi-line comments start with <span style="background-color:lightgray; color:palevioletred; font-family:'Segoe UI'">  /*  </span> and ends with <span style="background-color:lightgray; color:palevioletred; font-family:'Segoe UI'">  */  </span>.</p>
+                      <p>Any text between <span style="background-color:lightgray; color:palevioletred; font-family:'Segoe UI'">  /*  </span> and <span style="background-color:lightgray; color:palevioletred; font-family:'Segoe UI'">  */  </span> will be ignored by Java.</p>
+                      <p>This example uses a multi-line comment (a comment block) to explain the code:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:darkslateblue; font-family:'Segoe UI'">/*</span><span style="color:darkslateblue;"> The code below will print the words Hello World<br />
+                                    to the screen, and it is amazing </span><span style="color:darkslateblue; font-family:'Segoe UI'">*/</span><br />
+                                    <span style="font-weight:bold; color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="font-weight:bold; color:black;">out</span><span style="color:gray">.</span><span style="font-weight:bold; color:mediumvioletred;">println</span><span style="color:gray">("</span><span style="color:forestgreen; font-weight:bold;">Hello World</span><span style="color:gray">");</span>
+                                </p>
+                            </div>
+                        </div> 
+                  </div>
+                  <br />
+                      <div style="background-color: #FFFACD; color:black; padding: 20px 20px 20px 20px;">
+                          <h5>Single or multi-line comments?</h5>
+                          <p>It is up to you which you want to use. Normally, we use <span class="spn-clr1"> / /</span> for short comments, and <span class="spn-clr1"> /*  */</span> for longer.</p>
+                      </div>
+                  <hr />
+                  <br />
+                          <div class="exercise">
+                              <br />
+                          <h2 style="color:white;">Test Yourself With Exercises</h2>
+                               <div class="exercise-in1">
+                                    <h2>Exercise:</h2>
+                                   <p>Insert the missing part to create two types of comments.</p>
+                                        <div class="exercise-in2">
+                                            <p>
+                                               <input id="txt1" type="text" style="color:blue; border:none; height:20px; width:20px;" /> This is a single-line comment<br />
+                                               <input id="txt2" type="text" style="color:blue; border:none; height:20px; width:20px;" /> This is a multi-line comment <input id="txt3" type="text" style="color:blue; height:20px; border:none; width:20px;" />
+                                            </p>
+                                            <br />
+                                            <div id="showDiv2" style="border:2px solid; padding: 20px 20px 20px 20px;">
+                                                <h5>Correct Answer :</h5><br />
+                                               <input id="txt1" type="text" readonly="readonly" style="color:blue; border:none; height:20px; width:20px;" placeholder=" //  " /> This is a single-line comment<br />
+                                               <input id="txt2" type="text" readonly="readonly" style="color:blue; border:none; height:20px; width:20px;" placeholder=" /*" /> This is a multi-line comment <input id="txt3" readonly="readonly" type="text" style="color:blue; height:20px; border:none; width:20px;" placeholder=" */" />                                           
+                                        </div>
+                                            </div>
+                                            <div id="DIV5">
+                                                <br />
+                                                <input type="button" id="show2" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Show Answer" />
+                                            </div>
+                                            <div id="DIV6">
+                                                <br />
+                                                <input type="button" id="hide2" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Hide Answer" />
+                                            </div>
+                               </div>
+                          </div>
+                  <hr />
+
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre5" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt5" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div6">
+              <div class="heading mb-4">
+                <h2>Java Variables</h2>
+              </div>
+                  <div>
+                      <h4>Java Variables</h4>
+                      <br />
+                      <p>Variables are containers for storing data values.</p>
+                      <p>In Java, there are different types of variables, for example:</p>
+                      <ul>
+                          <li><span class="spn-clr1"> String </span> - stores text, such as "Hello". String values are surrounded by double quotes</li>
+                          <li><span class="spn-clr1"> int </span> - stores text, such as "Hello". String values are surrounded by double quotes</li>
+                          <li><span class="spn-clr1"> float </span> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                          <li><span class="spn-clr1"> char </span> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                          <li><span class="spn-clr1"> boolean </span> - stores values with two states: true or false</li>
+                      </ul>
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Declaring (Creating) Variables</h2>
+                      <br />
+                      <p>To create a variable, you must specify the type and assign it a value:</p>
+                        <div class="divpad">
+                            <h5>Syntax</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; font-style:italic; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p>type variable = value;</p>
+                            </div>
+                        </div> 
+                      <br />
+                      <p>Where type is one of Java's types (such as <span class="spn-clr1"> int </span> or <span class="spn-clr1"> String </span>), and variable is the name of the variable 
+                          (such as <span class="spnblack">x</span> or <span class="spnblack">name</span>).
+                          The <span class="spnblack">equal sign</span> is used to assign values to the variable.</p>
+                      <p>To create a variable that should store text, look at the following example:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p>Create a variable called <span class="spnblack">name</span> of type <span class="spn-clr1"> String </span> and assign it the value "<span class="spnblack">John</span>":</p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p>String name = <span style="color:gray">"</span><span style="color:forestgreen;">John</span><span style="color:gray">";</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span><span style="color:black;">name</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div> 
+                      <br />
+                      <p>To create a variable that should store a number, look at the following example:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p>Create a variable called <span class="spnblack">myNum </span> of type <span class="spn-clr1"> int </span> and assign it the value "<span class="spnblack">15</span>":</p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">int </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">15</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span><span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div> 
+                      <br />
+                      <p>You can also declare a variable without assigning the value, and assign the value later:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">int </span><span style="color:black;">myNum</span><span style="color:gray">;</span><br />
+                                    <span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">15</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span><span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div> 
+                      <br />
+                      <p>Note that if you assign a new value to an existing variable, it will overwrite the previous value:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p>Change the value of <span class="spn-clr1"> myNum </span> from <span class="spn-clr1"> 15 </span> to <span class="spn-clr1"> 20 </span>:</p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">int </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">15</span><span style="color:gray">;</span><br />
+                                    <span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">20</span><span style="color:gray">;</span>  <span style="color:darkslateblue;">// This is a comment</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span><span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div> 
+                  </div>
+                  <hr />
+                      <br />
+                  <div>
+                      <h4>Final Variables</h4>
+                      <br />
+                      <p>However, you can add the <span class="spn-clr1"> final </span> keyword if you don't want others (or yourself) to overwrite existing values (this will declare the variable as "final" or "constant", which means unchangeable and read-only):</p>
+                        <div style="background-color:#ffe6ff; padding: 20px 20px 20px 20px;">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:red; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">final int </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">15</span><span style="color:gray">;</span><br />
+                                    <span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">20</span><span style="color:gray">;</span>  <span style="color:darkslateblue;">// will generate an error: cannot assign a value to a final variable</span>
+                                </p>
+                            </div>
+                        </div> 
+                  </div>
+                  <hr />
+                      <br />
+                  <div>
+                      <h2>Other Types</h2>
+                      <br />
+                      <p>A demonstration of how to declare variables of other types:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">int </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">5</span><span style="color:gray">;</span><br />
+                                    <span style="color:#0779E4;">float </span><span style="color:black;">myFloatNum</span><span style="color:gray"> = </span><span style="color:#990000;">5.99f</span><span style="color:gray">;</span><br />
+                                    <span style="color:#0779E4;">char </span><span style="color:black;">myLetter</span><span style="color:gray"> = </span><span style="color:forestgreen;">'D'</span><span style="color:gray">;</span><br />
+                                    <span style="color:#0779E4;">boolean </span><span style="color:black;">myBool</span><span style="color:gray"> = </span><span style="color:#990000;">true</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">String </span><span style="color:black;">myText</span><span style="color:gray">.</span><span style="color:forestgreen;">"Hello"</span><span style="color:gray">;</span>
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                      <br />
+                      <div style="background-color: #FFFACD; color:black; padding: 20px 20px 20px 20px;">
+                          <p>You will learn more about <a id="a7" style="text-decoration:underline; cursor:pointer;">data types</a> in the next chapter.</p>
+                      </div>
+                  <hr />
+                  <br /><br /><br />
+                  <hr />
+                  <div>
+                      <h2>Display Variables</h2>
+                      <p>The <span style="color:mediumvioletred;"> println() </span>method is often used to display variables.</p>
+                      <p>To combine both text and a variable, use the  <span style="color:mediumvioletred; font-family:'Segoe UI'"> + </span> method is often used to display variablcharacter:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p>
+                                    <span style="color:mediumvioletred;">String </span><span style="color:black;">name</span><span style="color:gray">.</span><span style="color:forestgreen;">"John"</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">("</span>
+                                    <span style="color:forestgreen;">Hello </span><span style="color:gray">" + </span><span style="color:black;">name</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div> 
+                      <br />
+                      <p>You can also use the  <span style="color:mediumvioletred; font-family:'Segoe UI'"> + </span>  character to add a variable to another variable:</p>
+                      <div style="background-color:lightgray; padding:25px 25px 25px 25px;">
+                          <h5>Example</h5>
+                          <br />
+                          <div data-pym-src="https://www.jdoodle.com/embed/v0/2cPL"></div>
+                      </div>
+                      <br />
+                      <p>For numeric values, the  <span style="color:mediumvioletred; font-family:'Segoe UI'"> + </span>  character works as a mathematical operator (notice that we use <span style="color:mediumvioletred; font-family:'Segoe UI'"> int </span> (integer) variables here):</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">int </span><span style="color:black;">x</span><span style="color:gray"> = </span><span style="color:#990000;">5</span><span style="color:gray">;</span><br />
+                                    <span style="color:#0779E4;">int </span><span style="color:black;">y</span><span style="color:gray"> = </span><span style="color:#990000;">6</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">x</span><span style="color:gray"> + </span><span style="color:black;">y</span><span style="color:gray">);</span>  <span style="color:darkslateblue;">// Print the value of x + y</span>
+                                </p>
+                            </div>
+                        </div> 
+                      <p>From the example above, you can expect:</p>
+                      <ul>
+                          <li>x stores the value 5</li>
+                          <li>y stores the value 6</li>
+                          <li>Then we use the <span style="color:mediumvioletred;"> println() </span> method to display the value of x + y, which is <span style="color:black;"> 11 </span></li>
+                      </ul>
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Declare Many Variables</h2>
+                      <br />
+                      <p>To declare more than one variable of the <span style="color:black;"> same type </span>, use a comma-separated list:</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">int </span><span style="color:black;">x</span><span style="color:gray"> = </span><span style="color:#990000;">5</span><span style="color:gray">, </span>
+                                    <span style="color:black;">y</span><span style="color:gray"> = </span><span style="color:#990000;">6</span><span style="color:gray">, </span>
+                                    <span style="color:black;">z</span><span style="color:gray"> = </span><span style="color:#990000;">50</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">x</span><span style="color:gray"> + </span><span style="color:black;">y</span><span style="color:gray"> + </span><span style="color:black;">z</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div> 
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Java Identifiers</h2>
+                      <p>All Java <span style="color:black;"> variables </span> must be <span style="color:black;"> identified </span> with <span style="color:black;"> unique names </span>.</p>
+                      <p>These unique names are called<span style="color:black;"> identifiers </span>.</p>
+                      <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+                      <p><span style="color:black;">Note:</span> It is recommended to use descriptive names in order to create understandable and maintainable code:</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:darkslateblue;">// Good</span><br />
+                                    <span style="color:#0779E4;">int </span><span style="color:black;">minutesPerHour</span><span style="color:gray"> = </span><span style="color:#990000;">60</span><span style="color:gray">;</span><br />
+                                    <span style="color:darkslateblue;">// OK, but not so easy to understand what m actually is</span><br />
+                                    <span style="color:#0779E4;">int </span><span style="color:black;">m</span><span style="color:gray"> = </span><span style="color:#990000;">60</span><span style="color:gray">;</span>
+                                </p>
+                            </div>
+                        </div> 
+                      <br />
+                      <p>The general rules for constructing names for variables (unique identifiers) are:</p>
+                      <ul>
+                          <li>Names can contain letters, digits, underscores, and dollar signs</li>
+                          <li>Names must begin with a letter</li>
+                          <li>Names should start with a lowercase letter and it cannot contain whitespace</li>
+                          <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+                          <li>Names are case sensitive ("myVar" and "myvar" are different variables)</li>
+                          <li>Reserved words (like Java keywords, such as <span style="color:mediumvioletred;"> int </span> or <span style="color:mediumvioletred;"> boolean </span>) cannot be used as names</li>
+                      </ul>
+                  </div>
+                  <hr />
+                  <br />
+                          <div class="exercise">
+                              <br />
+                          <h2 style="color:white;">Test Yourself With Exercises</h2>
+                               <div class="exercise-in1">
+                                    <h2>Exercise:</h2>
+                                   <p>Create a variable named <span style="color:mediumvioletred;"> carName </span> and assign the value <span style="color:mediumvioletred;"> Volvo </span> to it.</p>
+                                        <div class="exercise-in2">
+                                            <p>
+                                               <input id="txt1" type="text" style="color:blue; border:none; width:50px;" />   <input id="txt2" type="text" style="color:blue; border:none; width:80px;" />  <span style="color:gray"> = "</span>   <input id="txt3" type="text" style="color:blue; border:none; width:50px;" /> <span style="color:gray">";</span>
+                                            </p>
+                                            <br />
+                                            <div id="showDiv3" style="border:2px solid; padding: 20px 20px 20px 20px;">
+                                                <h5>Correct Answer :</h5><br />
+                                               <input id="txt1" type="text" style="color:blue; border:none; width:50px;" placeholder="String" />   <input id="txt2" type="text" style="color:blue; border:none; width:80px;" placeholder="carName" />  <span style="color:gray"> = "</span>   <input id="txt3" type="text" style="color:blue; border:none; width:50px;" placeholder="Volvo"/> <span style="color:gray">";</span>                                       
+                                        </div>
+                                            </div>
+                                            <div id="DIV7">
+                                                <br />
+                                                <input type="button" id="show3" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Show Answer" />
+                                            </div>
+                                            <div id="DIV8">
+                                                <br />
+                                                <input type="button" id="hide3" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Hide Answer" />
+                                            </div>
+                               </div>
+                          </div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre6" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt6" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div7">
+              <div class="heading mb-4">
+                <h2>Java Data Types</h2>
+              </div>
+                  <br />
+                  <div>
+                      <h4>Java Data Types</h4>
+                      <br />
+                      <p>As explained in the previous chapter, a variable in Java must be a specified data type:</p>
+                        <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">int </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">5</span><span style="color:gray">;</span><span style="color:darkslateblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Integer (whole number)</span><br />
+                                    <span style="color:#0779E4;">float </span><span style="color:black;">myFloatNum</span><span style="color:gray"> = </span><span style="color:#990000;">5.99f</span><span style="color:gray">;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:darkslateblue;">// Floating point number</span><br />
+                                    <span style="color:#0779E4;">char </span><span style="color:black;">myLetter</span><span style="color:gray"> = </span><span style="color:forestgreen;">'D'</span><span style="color:gray">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:darkslateblue;">// Character</span><br />
+                                    <span style="color:#0779E4;">boolean </span><span style="color:black;">myBool</span><span style="color:gray"> = </span><span style="color:#990000;">true</span><span style="color:gray">;</span><span style="color:darkslateblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Boolean</span><br />
+                                    <span style="color:mediumvioletred;">String </span><span style="color:black;">myText</span><span style="color:gray">.</span><span style="color:forestgreen;">"Hello"</span><span style="color:gray">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:darkslateblue;">// String</span>
+                                </p>
+                            </div>
+                        </div> 
+                      <br />
+                      <p>Data types are divided into two groups:</p>
+                      <ul>
+                          <li>Primitive data types - includes <span class="spn-clr1"> byte </span><span style="color:gray"> , </span><span class="spn-clr1"> short </span><span style="color:gray"> , </span><span class="spn-clr1"> int </span>
+                              <span style="color:gray"> , </span><span class="spn-clr1"> long </span><span style="color:gray"> , </span><span class="spn-clr1"> float </span><span style="color:gray"> , </span><span class="spn-clr1"> double </span>
+                              <span style="color:gray"> , </span><span class="spn-clr1"> boolean </span> and <span class="spn-clr1"> char </span></li>
+                          <li>Non-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)</li>
+                      </ul>
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Primitive Data Types</h2>
+                      <br />
+                      <p>A primitive data type specifies the size and type of variable values, and it has no additional methods.</p>
+                      <p>There are eight primitive data types in Java:</p>
+                      <br />
+                      <table style=" border:1px solid;">
+                            <tbody>
+                                <tr>
+                                    <th style="padding-left:20px; height:50px; width:20%">Data Type</th>
+                                    <th style="padding-left:20px; height:50px; width:17%">Size</th>
+                                    <th style="width:63%">Description</th>
+                                </tr>
+                                <tr style="background-color:#eee;">
+                                    <td style="padding-left:20px; height:50px;">byte</td>
+                                    <td style="padding-left:20px; height:50px;">1 byte</td>
+                                    <td>Stores whole numbers from -128 to 127</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:20px; height:50px;">short</td>
+                                    <td style="padding-left:20px; height:50px;">2 bytes</td>
+                                    <td>Stores whole numbers from -32,768 to 32,767</td>
+                                </tr>
+                                <tr style="background-color:#eee;">
+                                    <td style="padding-left:20px; height:50px;">int</td>
+                                    <td style="padding-left:20px; height:50px;">4 bytes</td>
+                                    <td>Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:20px; height:50px;">long</td>
+                                    <td style="padding-left:20px; height:50px;">8 bytes</td>
+                                    <td>Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+                                </tr>
+                                <tr style="background-color:#eee;">
+                                    <td style="padding-left:20px; height:50px;">float</td>
+                                    <td style="padding-left:20px; height:50px;">4 bytes</td>
+                                    <td>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</td>
+                                <tr>
+                                    <td style="padding-left:20px; height:50px;">double</td>
+                                    <td style="padding-left:20px; height:50px;">8 bytes</td>
+                                    <td>Stores fractional numbers. Sufficient for storing 15 decimal digits</td>
+                                </tr>
+                                <tr style="background-color:#eee;">
+                                    <td style="padding-left:20px; height:50px;">boolean</td>
+                                    <td style="padding-left:20px; height:50px;">1 bit</td>
+                                    <td>Stores true or false values</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:20px; height:50px;">char</td>
+                                    <td style="padding-left:20px; height:50px;">2 bytes</td>
+                                    <td>Stores a single character/letter or ASCII values</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                  </div>
+                  <br />
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Numbers</h2>
+                      <br />
+                      <p>Primitive number types are divided into two groups:</p>
+                      <p><span class="spnblack">Integer types </span> stores whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are 
+                          <span class="spn-clr1"> byte </span> , <span class="spn-clr1"> short </span> , 
+                          <span class="spn-clr1"> int </span> and <span class="spn-clr1"> long </span> . Which type you should use, depends on the numeric value.</p>
+                      <p><span class="spnblack">Floating point types </span> represents numbers with a fractional part, containing one or more decimals. There are two types: 
+                          <span class="spn-clr1"> float </span> and <span class="spn-clr1"> double </span> .</p><br />
+                      <div style="background-color: #FFFACD; color:black; padding: 20px 20px 20px 20px;">
+                          <p>Even though there are many numeric types in Java, the most used for numbers are <span class="spn-clr1"> int </span> (for whole numbers) and 
+                              <span class="spn-clr1"> double </span> (for floating point numbers). However, we will describe them all as you continue to read.</p>
+                      </div>
+                  </div>
+                  <hr /><br /><br /><br /><hr />
+                  <div>
+                      <h2>Integer Types</h2>
+                      <br />
+                      <h5 style="color:black;">Byte</h5>
+                      <p></p>
+                      <p>The <span class="spn-clr1"> byte </span> data type can store whole numbers from -128 to 127. 
+                          This can be used instead of <span class="spn-clr1"> int </span> or other integer types to save memory when you are certain that the value will be within -128 and 127:</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">byte </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">100</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                       </div>
+                      <br />
+                      <h5 style="color:black;">Short</h5>
+                      <p></p>
+                      <p>The <span class="spn-clr1"> short </span> data type can store whole numbers from -32768 to 32767:</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">short </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">5000</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                       </div>
+                      <br />
+                      <h5 style="color:black;">Int</h5>
+                      <p></p>
+                      <p>The <span class="spn-clr1"> int </span> data type can store whole numbers from -2147483648 to 2147483647. In general, and in our tutorial,  
+                          the <span class="spn-clr1"> int </span> data type is the preferred data type when we create variables with a numeric value.</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">int </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">100000</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                       </div>
+                      <br />
+                      <h5 style="color:black;">Long</h5>
+                      <p></p>
+                      <p>The <span class="spn-clr1"> long </span> data type can store whole numbers from -9223372036854775808 to 9223372036854775807. This is used when int is not large enough to store the value. Note that you should end the value with an "L":</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">long </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">15000000000L</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                       </div>
+                 </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Floating Point Types</h2>
+                      <br />
+                      <p>You should use a floating point type whenever you need a number with a decimal, such as 9.99 or 3.14515.</p>
+                      <br />
+                      <h5 style="color:black;">Float</h5>
+                      <p></p>
+                      <p>The <span class="spn-clr1"> float </span> data type can store fractional numbers from 3.4e−038 to 3.4e+038. Note that you should end the value with an "f":</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">float </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">5.75f</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                       </div>
+                      <br />
+                      <h5 style="color:black;">Double</h5>
+                      <p></p>
+                      <p>The <span class="spn-clr1"> double </span> data type can store fractional numbers from 1.7e−308 to 1.7e+308. Note that you should end the value with a "d":</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">double </span><span style="color:black;">myNum</span><span style="color:gray"> = </span><span style="color:#990000;">19.99d</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">myNum</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                       </div>
+                      <br />
+                      <div style="background-color: #FFFACD; color:black; padding: 20px 20px 20px 20px;">
+                          <h5>Use <span class="spn-clr1"> float </span> or <span class="spn-clr1"> double </span>?</h5>
+                          <p></p>
+                          <p>The <span class="spnblack"> double </span> of a floating point value indicates how many digits the value can have after the decimal point. The precision of <span class="spn-clr1"> float </span> is only six or seven decimal digits, while 
+                              <span class="spn-clr1"> double </span> variables have a precision of about 15 digits. Therefore it is safer to use  <span class="spn-clr1"> double </span> for most calculations.</p>
+                      </div>
+                      <br />
+                      <h5 style="color:black;">Scientific Numbers</h5>
+                      <p></p>
+                      <p>A floating point number can also be a scientific number with an "e" to indicate the power of 10:</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">float </span><span style="color:black;">f1</span><span style="color:gray"> = </span><span style="color:#990000;">35e3f</span><span style="color:gray">;</span><br />
+                                <span style="color:#0779E4;">double </span><span style="color:black;">d1</span><span style="color:gray"> = </span><span style="color:#990000;">12E4d</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">f1</span><span style="color:gray">);</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">d1</span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div>
+                  </div>
+                      <hr />
+                      <br />
+                      <div>
+                          <h2>Booleans</h2>
+                          <br />
+                          <p>A boolean data type is declared with the <span class="spn-clr1"> boolean </span> keyword and can only take the values 
+                              <span class="spn-clr1"> true </span> or <span class="spn-clr1"> false </span>:</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">boolean </span><span style="color:black;">isJavaFun </span><span style="color:gray"> = </span><span style="color:#990000;">true</span><span style="color:gray">;</span><br />
+                                <span style="color:#0779E4;">boolean </span><span style="color:black;">isFishTasty </span><span style="color:gray"> = </span><span style="color:#990000;">false</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">isJavaFun</span><span style="color:gray">);</span>  <span style="color:darkslateblue;">    // Outputs true</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">isFishTasty </span><span style="color:gray">);</span>  <span style="color:darkslateblue;"> // Outputs false</span>
+                                </p>
+                            </div>
+                        </div>
+                          <p></p>
+                          <p>Boolean values are mostly used for conditional testing, which you will learn more about in a later chapter.</p>
+                      </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Characters</h2>
+                      <br />
+                      <p>The <span class="spn-clr1"> char </span> data type is used to store a <span class="spnblack"> single </span> character. The character must be surrounded by single quotes, like 'A' or 'c':</p>
+                      <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">char </span><span style="color:black;">myGrade </span><span style="color:gray"> = </span><span style="color:forestgreen;">'B' </span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">myGrade </span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div>
+                      <br />
+                      <p>Alternatively, you can use ASCII values to display certain characters:</p>
+                       <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:#0779E4;">char </span><span style="color:black;">a </span><span style="color:gray"> = </span><span style="color:#990000;">65 </span><span style="color:gray">,</span>
+                                    <span style="color:black;">b </span><span style="color:gray"> = </span><span style="color:#990000;">66 </span><span style="color:gray">,</span>
+                                    <span style="color:black;">c </span><span style="color:gray"> = </span><span style="color:#990000;">67 </span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">a </span><span style="color:gray">);</span>  <span style="color:darkslateblue;">   // Outputs A</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">b </span><span style="color:gray">);</span>  <span style="color:darkslateblue;">   // Outputs B</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">c </span><span style="color:gray">);</span>  <span style="color:darkslateblue;">   // Outputs C</span>
+                                </p>
+                            </div>
+                        </div>
+                      <br />
+                      <p><span class="spnblack">Tip:</span> A list of all ASCII values can be found in our <a target="_blank" href="pdf/ASCII.pdf" style="cursor:pointer; text-decoration:underline;">ASCII Table Reference.</a></p>
+                  </div>
+                  <hr />
+                      <br />
+                  <div>
+                      <h2>Strings</h2>
+                      <br />
+                      <p>The <span class="spn-clr1"> String </span> data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:</p>
+                       <div class="divpad">
+                            <h5>Example</h5>
+                            <p></p>
+                            <div style="background-color:white; border-left:3px solid; border-left-color:#0779E4; font-family:Consolas; padding: 5px 20px 5px 20px;">
+                                <p><span style="color:mediumvioletred;">string </span><span style="color:black;">greeting </span><span style="color:gray"> = </span><span style="color:forestgreen;">"Hello World"</span><span style="color:gray">;</span><br />
+                                    <span style="color:mediumvioletred;">System</span><span style="color:gray">.</span><span style="color:black;">out</span><span style="color:gray">.</span><span style="color:mediumvioletred;">println</span><span style="color:gray">(</span>
+                                    <span style="color:black;">greeting </span><span style="color:gray">);</span>
+                                </p>
+                            </div>
+                        </div>
+                      <br />
+                      <div style="background-color: #FFFACD; color:black; padding: 20px 20px 20px 20px;">
+                          <p>The String type is so much used and integrated in Java, that some call it "the special <span class="spnblack"> ninth </span> type".</p>    
+                          <p></p>
+                          <p>A String in Java is actually a <span class="spnblack"> non-primitive </span> data type, because it refers to an object. The String object has methods that are used to perform certain operations on strings.
+                              <span class="spnblack"> Don't worry if you don't understand the term "object" just yet </span> . We will learn more about strings and objects in a later chapter.</p>
+                      </div>
+                  </div>
+                  <hr />
+                  <br />
+                  <div>
+                      <h2>Non-Primitive Data Types</h2>
+                      <br />
+                      <p>Non-primitive data types are called <span class="spnblack"> reference </span> types because they refer to objects.</p>
+                      <p>The main difference between <span class="spnblack"> primitive </span> and <span class="spnblack"> non-primitive </span> data types are:</p>
+                      <ul>
+                          <li>Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for <span class="spn-clr1"> String </span>)</li>
+                          <li>Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.</li>
+                          <li>A primitive type has always a value, while non-primitive types can be <span class="spn-clr1"> null </span>.</li>
+                          <li>A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.</li>
+                          <li>The size of a primitive type depends on the data type, while non-primitive types have all the same size.</li>
+                      </ul>
+                      <p>Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc. You will learn more about these in a later chapter.</p>
+                  </div>
+                  <hr />
+                  <br />
+                          <div class="exercise">
+                              <br />
+                          <h2 style="color:white;">Test Yourself With Exercises</h2>
+                               <div class="exercise-in1">
+                                    <h2>Exercise:</h2>
+                                   <p>Create a variable named <span style="color:mediumvioletred;"> carName </span> and assign the value <span style="color:mediumvioletred;"> Volvo </span> to it.</p>
+                                        <div class="exercise-in2">
+                                            <p>
+                                               <input id="txt1" type="text" style="color:blue; border:none; width:50px;" />   <input id="txt2" type="text" style="color:blue; border:none; width:80px;" />  <span style="color:gray"> = "</span>   <input id="txt3" type="text" style="color:blue; border:none; width:50px;" /> <span style="color:gray">";</span>
+                                            </p>
+                                            <br />
+                                            <div id="showDiv4" style="border:2px solid; padding: 20px 20px 20px 20px;">
+                                                <h5>Correct Answer :</h5><br />
+                                               <input id="txt1" type="text" style="color:blue; border:none; width:50px;" placeholder="String" />   <input id="txt2" type="text" style="color:blue; border:none; width:80px;" placeholder="carName" />  <span style="color:gray"> = "</span>   <input id="txt3" type="text" style="color:blue; border:none; width:50px;" placeholder="Volvo"/> <span style="color:gray">";</span>                                       
+                                        </div>
+                                            </div>
+                                            <div id="DIV9">
+                                                <br />
+                                                <input type="button" id="show4" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Show Answer" />
+                                            </div>
+                                            <div id="DIV10">
+                                                <br />
+                                                <input type="button" id="hide4" class="btn btn-primary px-4" style="height:60px; width:150px;" value="Hide Answer" />
+                                            </div>
+                               </div>
+                          </div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre7" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt7" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div8">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre8" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt8" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div9">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre9" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt9" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div10">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre10" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt10" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+              
+              <div class="tutorial-item mb-4" id="div11">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre11" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt11" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div12">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre12" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt12" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div13">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre13" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt13" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div14">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre14" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt14" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div15">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre15" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt15" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div16">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre16" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt16" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div17">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre17" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt17" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div18">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre18" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt18" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div19">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre19" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt19" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div20">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input 19 type="button"  class="btn btn-primary px-4" id="pre20" value="&#8592; Previous" />
+                  <input 21 type="button"  class="btn btn-primary px-4" id="nxt20" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div21">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre21" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt21" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div22">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre22" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt22" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div23">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre23" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt23" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div24">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre24" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt24" value="Next &#8594;" />
+                  </div>
+              </div>
+
+              <div class="tutorial-item mb-4" id="div25">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre25" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt25" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div26">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre26" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt26" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div27">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre27" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt27" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div28">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre28" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt28" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div29">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre29" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt29" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div30">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre30" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt30" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div31">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre31" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt31" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div32">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre32" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt32" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div33">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre33" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt33" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div34">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre34" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt34" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div35">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre35" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt35" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div36">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre36" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt36" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div37">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre37" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt37" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div38">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre38" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt38" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div39">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre39" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt39" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div40">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre40" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt40" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div41">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre41" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt41" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div42">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre42" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt42" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div43">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre43" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt43" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div44">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre44" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt44" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div45">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre45" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt45" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div46">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre46" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt46" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div47">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre47" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt47" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div48">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre48" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt48" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div49">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre49" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt49" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div50">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre50" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt50" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div51">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre51" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt51" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div52">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre52" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt52" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div53">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre53" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt53" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div54">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre54" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt54" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div55">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre55" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt55" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div56">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre56" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt56" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div57">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre57" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt57" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div58">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre58" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt58" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div59">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="flex">
+                  <input type="button"  class="btn btn-primary px-4" id="pre59" value="&#8592; Previous" />
+                  <input type="button"  class="btn btn-primary px-4" id="nxt59" value="Next &#8594;" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+              <div class="tutorial-item mb-4" id="div60">
+              <div class="heading mb-4">
+                <h2>Java Tutorial</h2>
+              </div>
+                  <div></div>
+
+                  <hr />
+                  <br />
+                  <div class="text-left">
+                  <input type="button"  class="btn btn-primary px-4" id="pre60" value="&#8592; Previous" />
+                  </div>
+                      <br />
+                      <hr />
+              </div>
+
+            </div>
+            </div>
+        </div>
+     
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h2 class="footer-heading mb-4">About Us</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 ml-auto">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Quick Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Resources</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Support</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Company</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <div class="border-top pt-5">
+                <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="index.html" target="_blank" >WeTeachIT</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    </form>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/typewritter-effect.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/active-nav.js"></script>
+    <script src="js/hidden-div.js"></script>
+    <script src="js/side-nav.js"></script>
+    <script src="js/exercise.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
