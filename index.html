@@ -3,11 +3,15 @@
 <html>
 <head runat="server">
 
-    <title>Home</title>
+    <title>WeTeachIT - Home</title>
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="../images/logo/favicon.png" type="image/png">
-
+    <link href="../cookies/src/cookieconsent.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -20,9 +24,27 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link href="css/slider.css" rel="stylesheet" />
+    <link href="css/extra.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/side-nav.css" rel="stylesheet" />
+    <link href="css/bact-to-top.css" rel="stylesheet" />
+    <link href="css/scroll.css" rel="stylesheet" />
+    <link href="css/pop-up.css" rel="stylesheet" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <style type="text/css">
+        
+.act {
+    font-size: 18px;
+}
+.act:hover {
+    font-weight: bold;
+}
+ 
+    </style>
 
 
 </head>
@@ -47,7 +69,7 @@
 
             <div class="col-3">
               <div class="site-logo">
-                <a href="index.html"><strong>WeTeachIT</strong></a>
+                <a href="index.html"><strong>WeTeach<span style="color:#0779E4;">IT</span></strong></a>
               </div>
             </div>
 
@@ -60,8 +82,10 @@
                   <li><a href="index.html" class="nav-link">Home</a></li>
                   <li><a href="about.html" class="nav-link">About</a></li>
                   <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
-                  <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                  <li><a href="color-picker.html" class="nav-link">Color Picker</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;</li>
+                  <li><a href="login.html" style="font-weight:bold;" class="nav-link">LOGIN</a></li>
                 </ul>
               </nav>
             </div>
@@ -73,13 +97,29 @@
       </header>
 
     <div>
-        
-      <div class="site-section-cover overlay" style="background-image: url('images/hero_bg.jpg');">
+	
+    <a id="btn-btt" ></a>
+
+    <div id="start" class="site-section-cover overlay" style="background-image: url('images/hero_bg.jpg');">
         
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-10 text-center">
-                <h1>The <strong>Hub</strong> for <strong><span class="txt-rotate" data-period="2000" data-rotate='[ "Coading...", "Trying...", "Improving...", "Learning..!"]'></span></strong></h1>
+              <div>
+              <br /><br /><br /><br />
+              </div>
+                <h1>The <strong>Hub</strong> for <strong><span class="txt-rotate" data-period="1500" data-rotate='[ "Coding...", "Trying...", "Improving...", "Learning..!"]'></span></strong></h1>
+            <div id="mouse" class="mouse_scroll">
+              <br /><br /><br /><br /><br /><br />
+		        <div class="mouse">
+			        <div class="wheel"></div>
+		        </div>
+		        <div>
+			        <span class="m_scroll_arrows unu"></span>
+			        <span class="m_scroll_arrows doi"></span>
+			        <span class="m_scroll_arrows trei"></span>
+		        </div>
+            </div>
             </div>
           </div>
         </div>
@@ -91,47 +131,49 @@
             <div class="col">
               <div class="heading mb-4">
                 <span class="caption">Tutorial Courses</span>
-                <h2>Choose Course</h2>
+                <h2>Coming Soon...</h2>
               </div>
             </div>  
           </div>
           <div class="row align-items-stretch">
             <div class="col-lg-2">
-              <a href="#" class="course">
-                <span class="wrap-icon brand-adobeillustrator"></span>
-                <h3>Illustrator</h3>
+              <a href="#Comming-Soon" class="course">
+                <span class="wrap-icon"><img alt="HTML" src="images/logo/html.png" width="50" height="55" /></span>
+                <h3>HTML</h3>
               </a>
             </div>
             <div class="col-lg-2">
-              <a href="#" class="course">
-                <span class="wrap-icon brand-adobephotoshop"></span>
-                <h3>Photoshop</h3>
-              </a>
-            </div>
-            
-            <div class="col-lg-2">
-              <a href="#" class="course">
-                <span class="wrap-icon brand-angular"></span>
-                <h3>Angular</h3>
+              <a href="#Comming-Soon" class="course">
+                <span class="wrap-icon"><img alt="CSS" src="images/logo/css1.png" width="50" height="60" /></span>
+                <h3>CSS</h3>
               </a>
             </div>
             
             <div class="col-lg-2">
-              <a href="#" class="course">
-                <span class="wrap-icon brand-javascript"></span>
+              <a href="#Comming-Soon" class="course">
+                <span class="wrap-icon"><img alt="JavaScript" src="images/logo/javascript.png" width="55" height="55" /></span>
                 <h3>JavaScript</h3>
               </a>
             </div>
+
             <div class="col-lg-2">
-              <a href="#" class="course">
-                <span class="wrap-icon brand-react"></span>
-                <h3>React</h3>
+              <a href="#Comming-Soon" class="course">
+                <span class="wrap-icon"><img alt="PHP" src="images/logo/php.png" width="55" height="30" /></span>
+                <h3>PHP</h3>
               </a>
             </div>
+            
             <div class="col-lg-2">
-              <a href="#" class="course">
-                <span class="wrap-icon brand-vue-dot-js"></span>
-                <h3>Vue</h3>
+              <a hr" class="course">
+                <span class="wrap-icon"><img alt="MySQL" src="images/logo/mysql.png" width="50" height="55" /></span>
+                <h3>MySQL</h3>
+              </a>
+            </div>
+
+            <div class="col-lg-2">
+              <a href="" class="course">
+                <span class="wrap-icon"><img alt="Python" src="images/logo/python.png" width="50" height="50" /></span>
+                <h3>Python</h3>
               </a>
             </div>
           </div>
@@ -153,17 +195,32 @@
             <div class="col-lg-6 text-lg-right">
               <div class="d-inline-flex align-items-center ml-auto">
               <span class="mr-4">Share:</span>
-              <a href="#" class="mx-2 social-item"><span class="icon-facebook"></span></a>
-              <a href="#" class="mx-2 social-item"><span class="icon-twitter"></span></a>
-              <a href="#" class="mx-2 social-item"><span class="icon-linkedin"></span></a>
+              <span class="mx-2 social-item" data-js="facebook-share"><span class="icon-facebook"></span></span>
+              <span class="mx-2 social-item" data-js="twitter-share"><span class="icon-twitter"></span></span>
+              <span class="mx-2 social-item" data-js="linkedin-share"><span class="icon-linkedin"></span></span>
               </div>
             </div>
           </div>
+            <hr />
+            <br />
           <div class="row">
             <div class="col-12">
               <div class="heading mb-4">
-                <span class="caption">Latest</span>
-                <h2>Tutorials</h2>
+                <span class="caption">Java Tutorial</span>
+                <h2>Learn Java</h2>
+                  <p></p>
+                  <p><span style="font-weight:bold;">Java</span> is a programming language and computing platform first released by <span style="font-weight:bold;">Sun Microsystems</span> in <span style="font-weight:bold;">1995</span>. There are lots of applications and websites that will not work unless you have Java installed, and more are created every day.
+                      Java is fast, secure, and reliable. From laptops to datacenters, game consoles to scientific supercomputers, cell phones to the Internet, <span style="font-weight:bold;">Java is everywhere!</span></p>
+              </div>
+            </div>
+          </div>
+            <hr />
+            <br />
+          <div class="row">
+            <div class="col-12">
+              <div class="heading mb-4">
+                <span class="caption">Java</span>
+                <h2>Features</h2>
               </div>
             </div>
 
@@ -173,177 +230,87 @@
              <div class="mySlides ">
               <div class="d-flex tutorial-item mb-4">
                 <div class="img-wrap">
-                  <a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                  <p><img src="images/logo/java.png" alt="" class="img-fluid" /></p>
                 </div>
                 <div>
-                  <h3><a href="#">Learning React Native</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!</p>
-                  
-                  <p class="mb-0">
-                    <span class="brand-react h5"></span>
-                    <span class="brand-javascript h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                  
-                  <p><a href="tutorial-single.html" class="btn btn-primary custom-btn">View</a></p>
+                  <h3 style="font-weight:bold;">Simple</h3>
+                  <p>Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.</p>
                 </div>
               </div>
-
+                 
               <div class="d-flex tutorial-item mb-4">
                 <div class="img-wrap">
-                  <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                  <p><img src="images/features/Dynamic.jpg" alt="" class="img-fluid" /></p>
                 </div>
                 <div>
-                  <h3><a href="#">Learning Angular 101</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!</p>
-
-                  <p class="mb-0">
-                    <span class="brand-angular h5"></span>
-                    <span class="brand-javascript h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                  
-                  <p><a href="tutorial-single.html" class="btn btn-primary custom-btn">View</a></p>
+                  <h3 style="font-weight:bold;">Dynamic</h3>
+                  <p>Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry an extensive amount of run-time information.</p>
                 </div>
               </div>
               </div>
-
-
                  
              <div class="mySlides ">
               <div class="d-flex tutorial-item mb-4">
                 <div class="img-wrap">
-                  <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+                  <p><img src="images/features/Platform%20Independent.png" alt="" height="250" width="300" /></p>
                 </div>
                 <div>
-                  <h3><a href="#">Learning Photoshop</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!</p>
-                  <p class="mb-0">
-                    <span class="brand-adobephotoshop h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                  <p><a href="tutorial-single.html" class="btn btn-primary custom-btn">View</a></p>
+                  <h3 style="font-weight:bold;">Platform Independent</h3>
+                  <p>Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform-independent byte code.</p>
                 </div>
               </div>
 
               <div class="d-flex tutorial-item mb-4">
                 <div class="img-wrap">
-                  <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
+                  <p><img src="images/features/Portable.jpg" alt="" class="img-fluid" /></p>
                 </div>
                 <div>
-                  <h3><a href="#">Advance Illustrator</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!</p>
-                  <p class="mb-0">
-                    <span class="brand-adobeillustrator h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                  <p><a href="tutorial-single.html" class="btn btn-primary custom-btn">View</a></p>
+                  <h3 style="font-weight:bold;">Portable</h3>
+                  <p>Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. The compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.</p>
                 </div>
               </div>
               </div>
-                
-
                  
              <div class="mySlides ">
               <div class="d-flex tutorial-item mb-4">
                 <div class="img-wrap">
-                  <a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                  <p><img src="images/features/Secure.png" alt="" height="250" width="350" /></p>
                 </div>
                 <div>
-                  <h3><a href="#">Learning React Native</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!</p>
-                  
-                  <p class="mb-0">
-                    <span class="brand-react h5"></span>
-                    <span class="brand-javascript h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                  
-                  <p><a href="tutorial-single.html" class="btn btn-primary custom-btn">View</a></p>
+                  <h3 style="font-weight:bold;">Secure</h3>
+                  <p>With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.</p>
                 </div>
               </div>
 
               <div class="d-flex tutorial-item mb-4">
                 <div class="img-wrap">
-                  <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                  <p><img src="images/features/Multithreaded.png" alt="" class="img-fluid" /></p>
                 </div>
                 <div>
-                  <h3><a href="#">Learning Angular 101</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!</p>
-
-                  <p class="mb-0">
-                    <span class="brand-angular h5"></span>
-                    <span class="brand-javascript h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                  
-                  <p><a href="tutorial-single.html" class="btn btn-primary custom-btn">View</a></p>
+                  <h3 style="font-weight:bold;">Multithreaded</h3>
+                  <p>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.</p>
                 </div>
               </div>
               </div>
 
-
-                 
              <div class="mySlides ">
               <div class="d-flex tutorial-item mb-4">
                 <div class="img-wrap">
-                  <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+                  <p><img src="images/features/Interpreted.png" alt="" height="250" width="350" /></p>
                 </div>
                 <div>
-                  <h3><a href="#">Learning Photoshop</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!</p>
-                  <p class="mb-0">
-                    <span class="brand-adobephotoshop h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                  <p><a href="tutorial-single.html" class="btn btn-primary custom-btn">View</a></p>
+                  <h3 style="font-weight:bold;">Interpreted</h3>
+                  <p>Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical.</p>           
                 </div>
               </div>
 
               <div class="d-flex tutorial-item mb-4">
                 <div class="img-wrap">
-                  <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
+                  <p><img src="images/features/Architecture-neutral.jpg" alt="" height="250" width="350" /></p>
                 </div>
                 <div>
-                  <h3><a href="#">Advance Illustrator</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!</p>
-                  <p class="mb-0">
-                    <span class="brand-adobeillustrator h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                  <p><a href="tutorial-single.html" class="btn btn-primary custom-btn">View</a></p>
+                  <h3 style="font-weight:bold;">Architecture-neutral</h3>
+                  <p>Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.</p>                 
                 </div>
               </div>
               </div>
@@ -357,6 +324,7 @@
                         <span class="dot" onclick="currentSlide(2)">2</span> 
                         <span class="dot" onclick="currentSlide(3)">3</span> 
                         <span class="dot" onclick="currentSlide(4)">4</span> 
+                        <i style="padding-left:400px;"><input type="button" onclick="location.replace('tutorials/java.html');" class="btn btn-primary px-4" value="Learn Java"></i>
                     </div>
               </div>
             </div>
@@ -365,12 +333,12 @@
 
             <div class="col-lg-4">
               <div class="box-side mb-3">
-                <a href="#"><img src="images/img_1_horizontal.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Learning React Native</a></h3><br />
+                <p>&nbsp;<img src="images/features/OOPs.png" alt="" height="190" width="275" /></p>
+                <h3 style="font-weight:bold;">Object Orianted</h3>
               </div>  
               <div class="box-side mb-3">
-                <a href="#"><img src="images/img_2_horizontal.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Learning React Native</a></h3><br />
+                <p><img src="images/features/Robust.png" alt="" height="190" width="275" /></p>
+                <h3 style="font-weight:bold;">Robust</h3>
               </div>   
             </div>
           </div>
@@ -418,7 +386,7 @@
                 <span class="icon-star text-warning"></span>
                 <span class="icon-star text-warning"></span>
                 <span class="icon-star text-warning"></span>
-                <span class="icon-star-o text-warning"></span>
+                <span class="icon-star text-warning"></span>
               </div>
               <blockquote class="mb-4">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
@@ -440,7 +408,7 @@
                 <span class="icon-star text-warning"></span>
                 <span class="icon-star text-warning"></span>
                 <span class="icon-star text-warning"></span>
-                <span class="icon-star-o text-warning"></span>
+                <span class="icon-star-half text-warning"></span>
               </div>
               <blockquote class="mb-4">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
@@ -457,21 +425,61 @@
         </div>
       </div>
     </div>
-      
-
     </div>
+      <footer class="site-footer" id="myFooter">
+        <hr />
+          <br />
+            <div class="container">
+              <div class="row align-items-center text-center align-content-center justify-content-center">
+            <input class="footer-btn" id="Btn" type="button" value="Report Error"/>&nbsp;&nbsp;
+            <input class="footer-btn" onclick="window.open('color-picker.html')" type="button" value="Color Picker"/>&nbsp;&nbsp;
+            <input class="footer-btn" id="Btn1" type="button" value="More Info"/>&nbsp;&nbsp;
+            <input class="footer-btn" onclick="location.replace('privacy-policy.html')" type="button" value="Privacy Policy"/>&nbsp;&nbsp;&nbsp;&nbsp;
 
-      <footer class="site-footer">
+                <div class="col-3">
+                  <div class="site-logo footer-logo">
+                    <a href="index.html" style="color:black;">WeTeach<span style="color:#0779E4;">IT</span></a>
+                  </div>
+                </div>
+             </div>
+        </div>
+<!-- The Modal -->
+<div id="Modal" class="mymodal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Report Error</h2>
+    <h3>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</h3>
+    <h4><a href="mailto:help.weteachit@gmail.com">help.weteachit@gmail.com</a></h4>
+  </div>
+
+</div>
+<!-- The Modal1 -->
+<div id="Modal1" class="mymodal1">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close1">&times;</span>
+    <h2>Reach out to us</h2>
+    <h3>For more information on a topic, or other queries, reach out to us by sending us an e-mail:</h3>
+    <h4><a href="mailto:info.weteachit@gmail.com">info.weteachit@gmail.com</a></h4>
+  </div>
+
+</div>
+          <br />
+          <hr />
+          <br />
         <div class="container">
           <div class="row">
             <div class="col-lg-3">
               <h2 class="footer-heading mb-4">About Us</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <p>WeTeachIT is a java developers site, with tutorials and references on Java language. </p>
               <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="https://www.facebook.com/WeTeachIT.Tutorial/" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/weteachit/" target="_blank"><span class="icon-instagram"></span></a></li>
+                <li><a href="https://twitter.com/WeTeachIT1" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/weteachit-tutorials-bb2a9b1b7/" target="_blank"><span class="icon-linkedin"></span></a></li>
               </ul>
             </div>
             <div class="col-lg-8 ml-auto">
@@ -523,9 +531,7 @@
             <div class="col-md-12">
               <div class="border-top pt-5">
                 <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="index.html" target="_blank" >WeTeachIT</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
               </div>
             </div>
@@ -550,8 +556,64 @@
     <script src="js/aos.js"></script>
     <script src="js/typewritter-effect.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/active-nav.js"></script>
+    <script src="js/hidden-div.js"></script>
+    <script src="js/side-nav.js"></script>
+    <script src="js/execute.js"></script>
+    <script src="js/exercise.js"></script>
+    <script src="cookies/src/app.js"></script>
+    <script src="js/pop-up.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script src="../cookies/src/cookieconsent.js"></script>
+    <script>
+        
+var btn = $('#btn-btt');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 725) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
+
+
+
+        var twitterShare = document.querySelector('[data-js="twitter-share"]');
+
+        twitterShare.onclick = function(e) {
+          e.preventDefault();
+          var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup', 'height=350,width=600');
+          if(twitterWindow.focus) { twitterWindow.focus(); }
+            return false;
+          }
+
+        var facebookShare = document.querySelector('[data-js="facebook-share"]');
+
+        facebookShare.onclick = function(e) {
+          e.preventDefault();
+          var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup', 'height=350,width=600');
+          if(facebookWindow.focus) { facebookWindow.focus(); }
+            return false;
+        }
+        
+        var linkedinShare = document.querySelector('[data-js="linkedin-share"]');
+
+        linkedinShare.onclick = function(e) {
+          e.preventDefault();
+          var linkedinWindow = window.open('https://www.linkedin.com/sharer/sharer.php?u=' + document.URL, 'linkedin-popup', 'height=350,width=600');
+          if(linkedinWindow.focus) { linkedinWindow.focus(); }
+            return false;
+        }
+
+    </script>
 
 </body>
 </html>

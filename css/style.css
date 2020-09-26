@@ -1211,3 +1211,14 @@ h1, h2, h3, h4, h5,
     top: 0;
     width: 100%;
 }
+
+#mouse {
+    animation: cssAnimation 0s 5s forwards;
+    visibility: hidden;
+}
+
+@keyframes cssAnimation {
+    to {
+        visibility: visible;
+    }
+}

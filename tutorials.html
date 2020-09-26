@@ -3,10 +3,14 @@
 <html>
 <head runat="server">
 
+    <title>Tutorials</title>
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="../images/logo/favicon.png" type="image/png">
-
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -19,11 +23,27 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link href="css/slider.css" rel="stylesheet" />
+    <link href="css/extra.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/side-nav.css" rel="stylesheet" />
+    <link href="css/bact-to-top.css" rel="stylesheet" />
+    <link href="css/scroll.css" rel="stylesheet" />
+    <link href="css/pop-up.css" rel="stylesheet" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Tutorials</title>
+    
     <style type="text/css">
+        
+.act {
+    font-size: 18px;
+}
+.act:hover {
+    font-weight: bold;
+}
+ 
+ 
  
 /* The Modal (background) */
 .modal {
@@ -63,6 +83,56 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.list-wrapper {
+  position:relative;
+}
+.list-item-wrapper {
+  margin-top:10px;
+  position:relative;
+}
+.list-bullet {
+  margin-top:5px;
+  margin-left:10px;
+  float:left;
+  margin-right:20px;
+  background:#0779e4;
+  height:10px;
+  width:10px;
+  line-height:20px;
+  border-radius:100px;
+  font-weight:700;
+  color:white;
+  text-align:center;
+}
+.list-item {
+  display:table-row;
+  vertical-align:middle;
+}
+.list-title {
+    font-weight:700;
+}
+.list-text {
+    font-weight:400;
+}
+.blue-line {
+  top:10px;
+  background:#0779e4;
+  z-index:1;
+  width:1.5px;
+  height:100%;
+  position:absolute;
+  margin-left:14.5px;
+}
+.white-line {
+  background:#e6f3fe;
+  z-index:1;
+  top:15px;
+  width:1.5px;
+  height:100%;
+  position:absolute;
+  margin-left:14.5px;
+}
     </style>
 
 
@@ -88,7 +158,7 @@
 
             <div class="col-3">
               <div class="site-logo">
-                <a href="index.html"><strong>WeTeachIT</strong></a>
+                <a href="index.html"><strong>WeTeach<span style="color:#0779E4;">IT</span></strong></a>
               </div>
             </div>
 
@@ -101,8 +171,10 @@
                   <li><a href="index.html" class="nav-link">Home</a></li>
                   <li><a href="about.html" class="nav-link">About</a></li>
                   <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
-                  <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                  <li><a href="color-picker.html" class="nav-link">Color Picker</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;</li>
+                  <li><a href="login.html" style="font-weight:bold;" class="nav-link">LOGIN</a></li>
                 </ul>
               </nav>
             </div>
@@ -114,9 +186,11 @@
       </header>
 
     <div>
-        
-      <div class="site-section-cover overlay" style="background-image: url('images/hero_bg.jpg');">
-        
+	
+    <a id="btn-btt" ></a>
+
+      <div id="start" class="site-section-cover overlay" style="background-image: url('images/hero_bg.jpg');">
+
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-10 text-center">
@@ -126,185 +200,159 @@
         </div>
       </div>
 
-      
-
+     
       <div class="site-section bg-light">
         <div class="container">
           <div class="row">
             <div class="col">
               <div class="heading mb-4">
-                <span class="caption">Tutorial Courses</span>
-                <h2>Choose Course</h2>
+                <span class="caption">Tutorial Course</span>
+                <h2>Java Programming</h2>
               </div>
             </div>  
           </div>
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="">HTML</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn HTML">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="">CSS</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn CSS">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="">JavaScript</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn JavaScript">
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="row">
+                <div class="tutorial-item mb-4">
+                    <h3 style="font-family:Arial, Helvetica, sans-serif">Tutorial <span style="font-weight:bold;">Details</span></h3>
+                    <p></p>
+                    <span class="d-block">Java is a high-level programming language developed by Sun Microsystems. It was originally designed for developing programs for set-top boxes and handheld devices, but later became a popular choice for creating web applications.</span><br />
+                    <p></p>
+                    <div style="border:1px solid #0779e4;">
+                        <div style="padding:10px 10px 10px 20px; background-color:#e6f3fe;">
+                            <div class="list-wrapper">
 
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="">C++</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">C++ is a cross-platform language that can be used to create high-performance applications. C++ was developed by Bjarne Stroustrup, as an extension to the C language. C++ gives programmers a high level of control over system resources and memory.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn C++">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="java.html">Java</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">Java is a high-level programming language developed by Sun Microsystems. It was originally designed for developing programs for set-top boxes and handheld devices, but later became a popular choice for creating web applications.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn Java">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="">C#</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">C# is a hybrid of C and C++, it is a Microsoft programming language developed to compete with Sun's Java language. C# is an object-oriented programming language used with XML-based Web services on the . NET platform.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn C#">
-                </div>
-              </div>
-            </div>
-          </div>
+                                <div class="blue-line"></div>
 
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="">SQL</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">SQL (pronounced "ess-que-el") stands for Structured Query Language. SQL is used to communicate with a database. According to ANSI (American National Standards Institute), it is the standard language for relational database management systems.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn SQL">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="">Python</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. ... Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn Python">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="testimonial-2">
-              <blockquote class="mb-4">
-              <div class="d-flex v-card align-items-center">
-                    <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                  <br />
-                    <p><h2><a href="">PHP</a></h2></p>
-                </div>
-              </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <div class="author-name">
-                  <span class="d-block">PHP. Stands for "Hypertext Preprocessor." (It is a recursive acronym, if you can understand what that means.) PHP is an HTML-embedded Web scripting language. This means PHP code can be inserted into the HTML of a Web page.</span><br />
-                <input type="submit" class="btn btn-primary px-4" value="Learn PHP">
-                </div>
-              </div>
-            </div>
-          </div>
+                                <div class="list-item-wrapper">
+                                    <div class="list-bullet"></div>
+                                    <div class="list-item">
+                                        <div class="list-title">Welcome for Java Tutorial</div>
+                                        <div class="list-text">Get started with the Full Java Programming Tutorial and explore everything about the tutorial.</div>
+                                    </div>
+                                </div>
+                                <br />
+    
+                                <div class="list-item-wrapper">
+                                    <div class="list-bullet"></div>
+                                    <div class="list-item">
+                                        <div class="list-title">Phase-1: Getting started with JAVA and loops</div>
+                                        <div class="list-text">Learn basics of Java programming with tutorials on executing the loops.</div>
+                                    </div>
+                                </div>
+                                <br />
+    
+                                <div class="list-item-wrapper">
+                                    <div class="list-bullet"></div>
+                                    <div class="list-item">
+                                        <div class="list-title">Phase-2: Learning about Methods and parameters</div>
+                                        <div class="list-text">Performing task/actions using methods and passing data i.e. parameters into a method.</div>
+                                    </div>
+                                </div>
+                                <br />
+    
+                                <div class="list-item-wrapper">
+                                    <div class="list-bullet"></div>
+                                    <div class="list-item">
+                                        <div class="list-title">Phase-3: Implement OOPS using JAVA</div>
+                                        <div class="list-text">Implementing Java OOps Concept, (OOps - Object-Oriented Programming), by creating objects that contain both data and methods.</div>
+                                    </div>
+                                </div>
+                                <br />
+    
+                                <div class="list-item-wrapper">
+                                    <div class="list-bullet"></div>
+                                    <div class="list-item">
+                                        <div class="list-title">Phase-4: Playing with Java - File Class</div>
+                                        <div class="list-text">Creating, Searching, Deleting, Reading of files and directories which is refered as File handling in Java.</div>
+                                    </div>
+                                </div>
+                                <br />
+    
+                                <div class="list-item-wrapper">
+                                    <div class="list-bullet"></div>
+                                    <div class="list-item">
+                                        <div class="list-title">Phase-5: Testing skills with Exercises & Test</div>
+                                        <div class="list-text">Testing and Improving skills with topic-to-topic Exercises followed by appearing for a Test at the end of Tutorial.</div>
+                                    </div>
+                                </div>
+                                <br />
+    
+                                <div class="list-item-wrapper">
+                                    <div class="list-bullet"></div>
+                                    <div class="list-item">
+                                        <div class="list-title">Full Stack Java Programming Project</div>
+                                        <div class="list-text">Ending the tutorial by creating a Full Stack Java Programming Project which will provide you with hands-on working experience, the objective being to develop the entire project/application from scratch and deploy it into a pseudo-production environment.</div>
+                                    </div>
+                                    <p></p>
+                                    <div class="white-line"></div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                <br />
+                <hr />
+                <br />
+                <div>
+                    <div class="heading mb-4">
+                         <h2>Following are the notable features of Java:</h2>
+                    </div>
+                    <br />
+                        <h5 style="font-weight:bold;">Object Oriented</h5>
+                        <p>In Java, everything is an Object. Java can be easily extended since it is based on the Object model.</p>
 
-            
-            <br />
-            <div style="margin-left:85%;">
-                <input type="button" id="myBtn" style="background-color:transparent; border-color:#0779E4; color:#0779E4; font-size:18px;" value="Learn More..."/>
-            </div>
-            </div>
-            <br />
-            
-    </div>
-    </div>
+                        <h5 style="font-weight:bold;">Platform Independent</h5>
+                        <p>Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform-independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.</p>
+
+                        <h5 style="font-weight:bold;">Simple</h5>
+                        <p>Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.</p>
+
+                        <h5 style="font-weight:bold;">Secure</h5>
+                        <p>With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.</p>
+
+                        <h5 style="font-weight:bold;">Architecture-neutral</h5>
+                        <p>Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.</p>
+
+                        <h5 style="font-weight:bold;">Portable</h5>
+                        <p>Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. The compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.</p>
+
+                        <h5 style="font-weight:bold;">Robust</h5>
+                        <p>Java makes an effort to eliminate error-prone situations by emphasizing mainly on compile time error checking and runtime checking.</p>
+
+                        <h5 style="font-weight:bold;">Multithreaded</h5>
+                        <p>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.</p>
+
+                        <h5 style="font-weight:bold;">Interpreted</h5>
+                        <p>Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.</p>
+
+                        <h5 style="font-weight:bold;">High Performance</h5>
+                        <p>With the use of Just-In-Time compilers, Java enables high performance.</p>
+
+                        <h5 style="font-weight:bold;">Distributed</h5>
+                        <p>Java is designed for the distributed environment of the internet.</p>
+
+                        <h5 style="font-weight:bold;">Dynamic</h5>
+                        <p>Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry an extensive amount of run-time information that can be used to verify and resolve accesses to objects at run-time.</p>
+                    </div>
+                    <br/>
+                    <hr />
+                    <br />
+                    <div class="heading mb-4">
+                        <h4 style="color:#0779e4;">Why Java Tutorial?</h4>
+                    </div>
+                    <span class="d-block">Java Tutorial covers most of the aspects of Java Programming fom basics to advance level with thoughtfully dividing it in short topic based sections for better understanding and knowladge.</span><br />
+                    <h3 class="d-block">So, what are you waiting for?</h3><span class="d-block">Get started by clicking on the "<span style="font-weight:bold;">Learn Java</span>" button below.</span>
+                    <br />
+                <input type="button" onclick="location.replace('tutorials/java.html');" class="btn btn-primary px-4" value="Learn Java">
+                <div style="margin-left:85%;">
+                    <input type="button" id="myBtn" style="background-color:transparent; border-color:#0779E4; color:#0779E4; font-size:18px;" value="Learn More..."/>
+                </div>
+
+                </div>
+                <br />
+           </div>
+        </div>
+      </div>
    
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -313,54 +361,68 @@
   <div class="modal-content">
     <span class="close">&times;</span>
       <br />
-    <h2><p><span class="txt-rotate" data-period="2000" data-rotate='[ "Coming Soon..."]'></span></p></h2>
-    <p><h3>JQuary , C , Objective - C , Android , Machine Learning , etc.</h3></p>
-    <p><h5>Stay Tuned for future updates...</h5></p>
+    <h2><span class="txt-rotate" data-period="2000" data-rotate='[ "Coming Soon..."]'></span></h2>
+    <h3>HTML, CSS, JavaScript, PHP, SQL, Python, jQuery, C++, C#, React, Node.js, XML, Bootstrap, etc.</h3>
+    <h5 style="font-weight:bold;">Stay Tuned for future updates...</h5>
   </div>
 
 </div>
 
-    <script type="text/javascript">
-        
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-    </script>
     </div>
+      <footer class="site-footer" id="myFooter">
+        <hr />
+          <br />
+            <div class="container">
+              <div class="row align-items-center text-center align-content-center justify-content-center">
+            <input class="footer-btn" id="Btn" type="button" value="Report Error"/>&nbsp;&nbsp;
+            <input class="footer-btn" onclick="window.open('color-picker.html')" type="button" value="Color Picker"/>&nbsp;&nbsp;
+            <input class="footer-btn" id="Btn1" type="button" value="More Info"/>&nbsp;&nbsp;
+            <input class="footer-btn" onclick="location.replace('privacy-policy.html')" type="button" value="Privacy Policy"/>&nbsp;&nbsp;&nbsp;&nbsp;
 
-      <footer class="site-footer">
+                <div class="col-3">
+                  <div class="site-logo footer-logo">
+                    <a href="index.html" style="color:black;">WeTeach<span style="color:#0779E4;">IT</span></a>
+                  </div>
+                </div>
+             </div>
+        </div>
+<!-- The Modal -->
+<div id="Modal" class="mymodal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Report Error</h2>
+    <h3>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</h3>
+    <h4><a href="mailto:help.weteachit@gmail.com">help.weteachit@gmail.com</a></h4>
+  </div>
+
+</div>
+<!-- The Modal1 -->
+<div id="Modal1" class="mymodal1">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close1">&times;</span>
+    <h2>Reach out to us</h2>
+    <h3>For more information on a topic, or other queries, reach out to us by sending us an e-mail:</h3>
+    <h4><a href="mailto:info.weteachit@gmail.com">info.weteachit@gmail.com</a></h4>
+  </div>
+
+</div>
+          <br />
+          <hr />
+          <br />
         <div class="container">
           <div class="row">
             <div class="col-lg-3">
               <h2 class="footer-heading mb-4">About Us</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <p>WeTeachIT is a java developers site, with tutorials and references on Java language. </p>
               <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="https://www.facebook.com/WeTeachIT.Tutorial/" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/weteachit/" target="_blank"><span class="icon-instagram"></span></a></li>
+                <li><a href="https://twitter.com/WeTeachIT1" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/weteachit-tutorials-bb2a9b1b7/" target="_blank"><span class="icon-linkedin"></span></a></li>
               </ul>
             </div>
             <div class="col-lg-8 ml-auto">
@@ -412,9 +474,7 @@ window.onclick = function(event) {
             <div class="col-md-12">
               <div class="border-top pt-5">
                 <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="index.html" target="_blank" >WeTeachIT</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
               </div>
             </div>
@@ -439,8 +499,60 @@ window.onclick = function(event) {
     <script src="js/aos.js"></script>
     <script src="js/typewritter-effect.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/active-nav.js"></script>
+    <script src="js/hidden-div.js"></script>
+    <script src="js/side-nav.js"></script>
+    <script src="js/execute.js"></script>
+    <script src="js/exercise.js"></script>
+    <script src="cookies/src/app.js"></script>
+    <script src="js/pop-up.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script>
+        
+var btn = $('#btn-btt');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 725) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
+
+        
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
 
 </body>
 </html>

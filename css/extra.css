@@ -1,0 +1,106 @@
+﻿
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divBg {
+    background-color: #C0C0C0;
+    border: none;
+    width: 100%;
+}
+
+    .divBg:hover {
+        background-color: gray;
+        color: white;
+    }
+
+    .divBg:after {
+        background-color: gray;
+        color: white;
+    }
+
+
+div#mySidenav a:hover {
+    background-color: white;
+    color: #0779E4;
+    font-weight: bold;
+}
+
+div#mySidenav a.active {
+    background-color: #0779E4;
+    color: white;
+}
+
+.spnblack {
+    color: black;
+    font-weight: bold;
+}
+
+.spn-clr1 {
+    background-color: lightgray;
+    color: mediumvioletred;
+}
+
+.divpad {
+    background-color: lightgray;
+    padding: 20px 20px 20px 20px;
+}
+
+.divpad1 {
+    background-color: black;
+    font-family: Consolas;
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+.divblack {
+    background-color: black;
+    border-left: 3px solid;
+    border-left-color: #0779E4;
+    font-family: Consolas;
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+.exercise {
+    background-color: darkslategray;
+    padding: 20px 20px 20px 20px;
+}
+
+.exercise-in1 {
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+.exercise-in2 {
+    background-color: lightgray;
+    border-left: 3px solid;
+    border-left-color: #0779E4;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
