@@ -379,6 +379,7 @@
                   <li><a href="index.html" class="nav-link">Home</a></li>
                   <li><a href="about.html" class="nav-link">About</a></li>
                   <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
+                  <li><a href="color-picker.html" class="nav-link">Color Picker</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
                     <li>&nbsp;&nbsp;&nbsp;</li>
                   <li><a href="login.html" style="font-weight:bold;" class="nav-link">LOGIN</a></li>
@@ -694,6 +695,9 @@ btn.on('click', function (e) {
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
 
+	$(document).ready(function () {
+		window.location.hash = '';
+	});
     </script>
 
 </body>
